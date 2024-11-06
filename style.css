@@ -1,449 +1,406 @@
 /* Reset Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body Styles */
-  body {
-    background-color: #A3BDD6;
-    padding-top: 70px; /* Add padding to compensate for the fixed header */
-    overflow-x: hidden;
-  }
-  
-  /* Font Face */
-  @font-face {
-    font-family: "RecifeText";
-    src: url("fonts/RecifeText_Light.ttf") format("truetype");
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  /* Global Typography Styles */
-  h1 {
-    font-size: 2.4rem;
-    font-family: "RecifeText", sans-serif;
-    color: white;
-  }
-  
-  h2 {
-    font-family: Arial, sans-serif;
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  }
+/* Body Styles */
+body {
+  background-color: #A3BDD6;
+  padding-top: 70px; /* Compensate for fixed header */
+  overflow-x: hidden;
+}
 
-  .bannerText{
-    font-size: 3em;
-  }
-  
-  h3 {
-    font-family: Arial, sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-    color: white;
-  }
-  
-  p,
-  li {
-    font-family: Arial, sans-serif;
-    font-weight: 400;
-    color: white;
-  }
-  
-  /* Navigation Bar Styles */
+/* Font Face */
+@font-face {
+  font-family: "RecifeText";
+  src: url("fonts/RecifeText_Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Global Typography Styles */
+h1 {
+  font-size: 2.4rem;
+  font-family: "RecifeText", sans-serif;
+  color: white;
+}
+
+h2 {
+  font-family: Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: white;
+}
+
+.bannerText {
+  font-size: 3em;
+}
+
+h3 {
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+}
+
+p,
+li {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+/* Navigation Bar Styles */
+.header {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space between logo and nav items */
+  padding: 1em 2em;
+  height: 70px;
+  position: fixed; /* Fix header to the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure header stays above other content */
+}
+
+.logo {
+  height: 50px;
+  margin-right: 2em;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  padding: 0;
+  font-size: 0.9rem;
+  gap: 1.5em;
+  margin-right: 1.5em;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.applyButtonHeader {
+  background-color: #FECE36;
+  color: black;
+  padding: 5px 30px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.applyButtonHeader:hover {
+  background-color: white;
+  color: #FECE36;
+}
+
+/* Align elements at the same height */
+.header img,
+.header .nav-links a,
+.header .applyButtonHeader {
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
   .header {
-    display: flex;
-    align-items: center; /* Ensures all items are aligned vertically */
-    justify-content: space-between; /* Space between the logo and the nav items */
-    /* background-color: #0d2240; */
-    padding: 1em 2em;
-    height: 70px; /* Adjust the height to make the header taller */
-    position: fixed; /* Fix the header to the top */
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Ensure the header stays above other content */
+    padding: 0.5em 1em;
   }
-  
+
   .logo {
-    height: 50px; /* Adjust based on your logo size */
-    margin-right: 2em; /* Adjust to align with the right button */
+    height: 30px;
+    margin-right: 1em;
   }
-  
+
   .nav-links {
-    display: flex;
-    list-style: none;
-    margin-left: auto; 
-    padding: 0;
-    font-size: 0.9rem; /* Smaller font size for the links */
-    gap: 1.5em; /* Space between each link */
-    margin-right: 1.5em; /* Move the nav-links closer to the button */
+    gap: 1em;
+    font-size: 0.8rem;
   }
-  
-  .nav-links a {
-    color: black;
-    text-decoration: none;
-    /* font-weight: bold; */
-  }
-  
-  .nav-links a.active,
-  .nav-links a:hover {
-    text-decoration: underline;
-  }
-  
+
   .applyButtonHeader {
-    background-color: #FECE36; /* Dark red background color */
-    color: black;
-    padding: 5px 30px; /* Make the button bigger */
-    border: none;
-    border-radius: 20px; /* Rounded edges */
-    font-size: 1.1rem; /* Increase the font size */
-    cursor: pointer;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    margin-left: 1em;
   }
-  
-  .applyButtonHeader:hover {
-    background-color: white; 
-    color: #FECE36; 
-  }
-  
-  /* Ensuring all elements align at the same height */
-  .header img,
-  .header .nav-links a,
-  .header .applyButtonHeader {
-    vertical-align: middle;
-  }
-  
-  @media (max-width: 768px) {
-    .header {
-      padding: 0.5em 1em; /* Reduce padding for mobile */
-    }
-  
-    .logo {
-      height: 30px; /* Smaller logo on mobile */
-      margin-right: 1em; /* Adjust margin to keep it compact */
-    }
-  
-    .nav-links {
-      gap: 1em; /* Reduce space between links */
-      font-size: 0.8rem; /* Smaller font for mobile view */
-    }
-  
-    .applyButtonHeader {
-      padding: 8px 20px; /* Reduce button size on mobile */
-      font-size: 0.9rem; /* Smaller font for the button */
-      margin-left: 1em; /* Adjust the margin */
-    }
-  }
-  
-  
-  /* Main Content Styles */
-  
-  /* Home Page Container */
-  .homeContainer {
-    margin: 30px auto 50px auto;
-    width: 70%;
-  }
-  
-  .homeContainer p {
-    font-size: 1.2rem;
-  }
-  
-  /* Introduction Section */
-  .introText {
-    margin-bottom: 100px;
-    z-index: 20;
-  }
+}
 
-  .churchImage{
-    /* position: relative;
-    left: 500px; */
-    margin-top: 0px;
-    margin-left: 700px;
-    z-index: 1;
-  }
-  
-  /* .flyer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-  
-  .flyer img {
-    max-width: 60%;
-  } */
-  
-  .brownBlock {
-    /* margin-top: 0px; */
-    width: 100%;
-    height: 200px; /* Adjust height as needed */
-    background-color: #9B775A; /* Brown color */
-    text-align: center;
-    display: flex;
-    justify-content: center;      /* Center the h3 elements horizontally */
-    align-items: center;          /* Center the h3 elements vertically */
-    padding: 20px;
-    gap: 150px;          
-    /* Remove position: relative; bottom: 0; */
-  }
-  
-  .applyButton {
-    background-color: #9B775A;
-    color: white;
-    font-size: 2em;
-    padding: 10px 30px;
-    margin: 10px;
-    border: none;
-    border-radius: 15px;
-    margin-top: 200px;
-    cursor: pointer;
-    align-self: center; /* Center the button vertically */
-  }
-  
+/* Main Content Styles */
+
+/* Home Page Container */
+.homeContainer {
+  margin: 30px auto 50px auto;
+  width: 70%;
+}
+
+.homeContainer p {
+  font-size: 1.2rem;
+}
+
+/* Introduction Section */
+.introText {
+  margin-bottom: 100px;
+  z-index: 20;
+}
+
+.churchImage {
+  margin-top: 0px;
+  margin-left: 700px;
+  z-index: 1;
+}
+
+/* Brown Block */
+.brownBlock {
+  width: 100%;
+  background-color: #9B775A;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 150px;
+}
+
+.brownBlock h3 {
+  margin: 0;
+  color: white;
+}
+
+/* Apply Button */
+.applyButton {
+  background-color: #9B775A;
+  color: white;
+  font-size: 2em;
+  padding: 10px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
 .applyButton:hover {
-    background-color: #0d2240; 
-    color: white; 
-  }
-  
-  /* Responsive adjustments for mobile view */
-  @media (max-width: 768px) {
-    .flyer {
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
-  
-    .flyer img {
-      max-width: 100%; /* Make the image take the full width of the container */
-      height: auto;
-    }
-  
-    .flyer .applyButton {
-      width: 100%;
-      margin-top: 120px; /* Add space between the image and button */
-    }
-  
-    /* .applicationProcessButton{
-      align-items: left;
-    } */
-  }
-  
+  background-color: #0d2240;
+  color: white;
+}
 
-  /* Style for the section below the brown block */
-  .white-section {
-    background-color: #FFFFFF; /* White background */
-    padding: 50px 0; /* Adjust padding as needed */
+/* Learning Facilitators Section */
+.learningFacilitators {
+  background-color: white;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.innerContainer {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Row for mainBlock and secondaryBlock */
+.innerContainer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.mainBlock,
+.secondaryBlock {
+  flex: 1;
+  margin-right: 1em;
+}
+
+.secondaryBlock {
+  margin-right: 0;
+}
+
+/* Third Block */
+.thirdBlock {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.thirdBlock .facultyImage {
+  width: 60%; /* Adjust as needed */
+  margin: 20px auto;
+}
+
+.thirdBlock h1,
+.thirdBlock h2,
+.thirdBlock p {
+  color: black;
+}
+
+/* Faculty Image */
+.facultyImage {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+/* Text Styles for Learning Facilitators */
+.learningFacilitators h1,
+.learningFacilitators h2,
+.learningFacilitators p {
+  color: black;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .innerContainer .row {
+    flex-direction: column;
+    align-items: center;
   }
 
+  .mainBlock,
+  .secondaryBlock {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
 
+  .brownBlock {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-  /* Program Overview Section */
-  .programOverviewText{
-    margin-bottom: 50px;
-  }
-  
-  .programOverview {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 100px;
-  }
-  
-  .programOverviewBoxes {
-    background-color: #f0f0f0;
-    padding: 1em;
-    flex: 1 1 calc(33.333% - 1em);
-    box-sizing: border-box;
-    text-align: left;
-  }
-  
-  .programOverviewBoxes ul li {
-    margin-bottom: 0.5em;
-    list-style-type:disc;
-  }
-  
-  .programOverviewBoxes .keyHeading {
-    font-size: 1em;
-    margin-bottom: 0.5em;
-  }
-  
-  
-  /* Learning Facilitators Section */
-  .learningFacilitators {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 2em 0;
-    margin-bottom: 100px;
+  .churchImage {
+    margin-left: 0;
     width: 100%;
-    margin: 0px auto 50px auto;
-    background-color: white;
-  }
-  
-  .learningFacilitators .mainBlock {
-    flex: 2;
-    margin-right: 1em;
-  }
-  
-  .learningFacilitators .secondaryBlock,
-  .learningFacilitators .thirdBlock {
-    flex: 2;
-    margin-right: 1em;
-  }
-  
-  .learningFacilitators .thirdBlock {
-    margin-right: 0; /* Remove margin from the last block */
-  }
-  
-  
-  /* Adjust text color for readability */
-  .learningFacilitators h1,
-  .learningFacilitators h2,
-  .learningFacilitators p {
-    color: black;
-  }
-  
-  
-  /* .learningFacilitators h2 {
-    margin-top: 0;
-  } */
-
-  .innerContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 70%;
-    margin: 0 auto;
   }
 
-  
   .facultyImage {
-    margin: 20px 0;
-    width: 70%;
-  }
-
-
-  
-  .learningFacilitators p {
-    font-size: 1em;
-    color: #333;
-  }
-  
-  /* Responsive Adjustments for Learning Facilitators */
-  @media (max-width: 768px) {
-    .learningFacilitators {
-      flex-direction: column;
-    }
-  
-    .learningFacilitators .mainBlock,
-    .learningFacilitators .secondaryBlock {
-      flex: none;
-      margin-right: 0;
-      margin-bottom: 1em;
-    }
-  }
-  
-  .whoShouldApply{
-    margin-bottom: 100px;
-  }
-  
-  .fundingOpportunity{
-    margin-bottom: 100px;
-  }
-  
-  /* Application Process Page */
-  .applicationProcessContainer {
-    margin: 30px auto 50px auto;
-    width: 70%;
-    text-align: left;
-    margin-bottom: 100px;
-  }
-  
-  .applicationProcessContainer p {
-    font-size: 1.2rem;
-    color: black;
-  }
-  
-  .applicationProcessText {
-    margin-bottom: 50px; /* This adds space before the button */
-  }
-  
-  
-  /* FAQs Page */
-  .faqsContainer {
-    margin: 30px auto 50px auto;
-    width: 70%;
-    text-align: left;
-  }
-  
-  .faqsContainer p {
-    white-space: pre-wrap;
-  }
-  
-  .faqsContainer li {
-    list-style-type: none;
-  }
-  
-  /* Application Process Button */
-  .applicationProcessButton {
-    margin: 0 auto 50px; /* Center the button with margin auto */
-    background-color: #FECE36; /* Yellow background */
-    color: #0d2240; /* Dark blue text */
-    padding: 10px 80px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    display: block; /* Ensure the button takes up full width available and can be centered */
-  }
-  
-  .applicationProcessButton:hover {
-    background-color: #0d2240; 
-    color: white; 
-  }
-  
-  /* Footer Styles */
-  .footerContainer {
-    /* background-color: #333; */
-    /* color: white; */
-    /* padding: 1em 0; */
-    margin-bottom: 50px;
     width: 100%;
   }
-  
-  .footerContent {
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
+
+  .thirdBlock .facultyImage {
+    width: 100%;
+    margin: 20px 0;
   }
-  
-  .footerContent p {
-    color: black;
-    margin-bottom: 0.5em;
+}
+
+/* Program Overview Section */
+.programOverviewText {
+  margin-bottom: 50px;
+}
+
+.programOverview {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.programOverviewBoxes {
+  background-color: #f0f0f0;
+  padding: 1em;
+  flex: 1 1 calc(33.333% - 1em);
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.programOverviewBoxes ul li {
+  margin-bottom: 0.5em;
+  list-style-type: disc;
+}
+
+.programOverviewBoxes .keyHeading {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+/* Application Process Page */
+.applicationProcessContainer {
+  margin: 30px auto 50px auto;
+  width: 70%;
+  text-align: left;
+  margin-bottom: 100px;
+}
+
+.applicationProcessContainer p {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.applicationProcessText {
+  margin-bottom: 50px;
+}
+
+/* Application Process Button */
+.applicationProcessButton {
+  margin: 0 auto 50px;
+  background-color: #FECE36;
+  color: #0d2240;
+  padding: 10px 80px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  display: block;
+}
+
+.applicationProcessButton:hover {
+  background-color: #0d2240;
+  color: white;
+}
+
+/* FAQs Page */
+.faqsContainer {
+  margin: 30px auto 50px auto;
+  width: 70%;
+  text-align: left;
+}
+
+.faqsContainer p {
+  white-space: pre-wrap;
+}
+
+.faqsContainer li {
+  list-style-type: none;
+}
+
+/* Footer Styles */
+.footerContainer {
+  width: 100%;
+}
+
+.footerContent {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footerContent p {
+  color: black;
+  margin-bottom: 0.5em;
+}
+
+.footerNav a {
+  font-family: Arial, sans-serif;
+  color: black;
+  text-decoration: none;
+  margin: 0 0.5em;
+}
+
+.footerNav a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments for Program Overview */
+@media (max-width: 768px) {
+  .programOverview {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .footerNav a {
-    font-family: Arial,sans-serif;
-    color: black;
-    text-decoration: none;
-    margin: 0 0.5em;
+
+  .programOverviewBoxes {
+    flex: 1 1 100%;
   }
-  
-  .footerNav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Responsive Adjustments for Program Overview */
-  @media (max-width: 768px) {
-    .programOverview {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .programOverviewBoxes {
-      flex: 1 1 100%;
-    }
-  }
+}

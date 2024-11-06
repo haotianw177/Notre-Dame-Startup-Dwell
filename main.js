@@ -8,7 +8,7 @@ Vue.component("headerComponent", {
         <li><a href="#" :class="{ active: $root.currentView === 'applicationProcess' }" @click.prevent="navigate('applicationProcess')">Service</a></li>
         <li><a href="#" :class="{ active: $root.currentView === 'faqs' }" @click.prevent="navigate('faqs')">Contact</a></li>
       </ul>
-      <button onclick="window.location.href='https://frmtb6m2df5.typeform.com/to/d6rSgwRs?typeform-source=esteem-unusualacademy.carrd.co'" class="applyButtonHeader">Join Us</button>
+      <button onclick="" class="applyButtonHeader">Join Us</button>
       </div>
   
     `,
