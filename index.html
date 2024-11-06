@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notre Dame ESTEEM Unusual Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Vue App Mount Point -->
+    <div id="app">
+        <!-- Use the New Header Component -->
+        <header-component></header-component>
+
+        <!-- Dynamic Component Rendering -->
+        <component :is="currentView"></component>
+        
+        <!-- Footer Component -->
+        <footer-component></footer-component>
+    </div>
+
+    <!-- Include Vue.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <!-- Include Main JavaScript File -->
+    <script src="main.js"></script>
+</body>
+</html>
