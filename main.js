@@ -59,13 +59,13 @@ Vue.component("headerComponent", {
                 <h1>Fr. Mike Schmitz</h1>
                 <h2>The Grace of Baptism</h2>
                 <img src="images/1.jpg" class="facultyImage">
-                <p>Director of Youth and Young Adult Ministry...</p>
+                <p>Director of Youth and Young Adult Ministry for the Diocese of Duluth and host of the widely popular podcasts 'Bible in a Year' and 'The Catechism in a Year' by Ascension, Fr. Mike speaks about the special grace received in the Baptism that makes us sons and daughters of God.</p>
               </div>
               <div class="secondaryBlock">
                 <h1>Jim Gaffigan</h1>
                 <h2>Teaches the Role of a Godparent</h2>
                 <img src="images/2.jpg" class="facultyImage">
-                <p>A stand-up comedian celebrated for his clean, family-focused humor...</p>
+                <p>A stand-up comedian celebrated for his clean, family-focused humor and subtle references to his Catholic faith, Jim delivers an engaging and humorous talk on the important role of baptismal godparents in guiding and supporting the spiritual lives of their godchildren.</p>
               </div>
             </div>
             <!-- Second Row: thirdBlock -->
@@ -73,7 +73,7 @@ Vue.component("headerComponent", {
               <h1>Ana & Daniel Glaze</h1>
               <h2>The Necessity of Baptism</h2>
               <img src="images/3.jpg" class="facultyImage">
-              <p>Creators of the YouTube channel 'That Catholic Couple'...</p>
+              <p>Creators of the YouTube channel 'That Catholic Couple,' where they evangelize by presenting the pursuit of holiness in married life as a path to true happiness.</p>
             </div>
           </div>
         </div>
