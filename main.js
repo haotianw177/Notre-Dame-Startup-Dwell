@@ -42,7 +42,7 @@ Vue.component("headerComponent", {
             <button class="applyButton" onclick="window.location.href='your_link_here'">Pre - Jordan Program</button>
             <button class="applyButton" onclick="window.location.href='your_link_here'">Bethany</button>
             <img class="churchImage" src="images/church.png">
-          </div>       
+            </div>       
            </div>
 
   
