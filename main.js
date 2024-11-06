@@ -41,9 +41,10 @@ Vue.component("headerComponent", {
             <br>
             <button class="applyButton" onclick="window.location.href='your_link_here'">Pre - Jordan Program</button>
             <button class="applyButton" onclick="window.location.href='your_link_here'">Bethany</button>
-          
-          </div>
-        </div><img class="churchImage" src="images/church.png">
+            <img class="churchImage" src="images/church.png">
+          </div>       
+           </div>
+
   
         <div class="brownBlock">
           <h3>Flash information with Catholic content creator</h3>

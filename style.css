@@ -154,13 +154,14 @@ li {
 }
 
 .churchImage {
-  position: relative;
-  top:-520px;
-  margin-top: 0px;
-  margin-left: 720px;
-  z-index: 222;
-  width: 50%;
+  display: block;
+  width: 100%; /* Make it responsive */
+  max-width: 700px; /* Adjust as needed */
+  margin: 0 auto; /* Center the image */
+  margin-top: 0px; /* Add spacing above if needed */
+  margin-bottom: 50px; /* Add spacing below if needed */
 }
+
 
 /* Brown Block */
 .brownBlock {
