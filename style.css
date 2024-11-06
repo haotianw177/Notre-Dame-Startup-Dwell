@@ -154,9 +154,12 @@ li {
 }
 
 .churchImage {
+  position: relative;
+  top:-520px;
   margin-top: 0px;
-  margin-left: 700px;
-  z-index: 1;
+  margin-left: 720px;
+  z-index: 222;
+  width: 50%;
 }
 
 /* Brown Block */
@@ -372,8 +375,9 @@ li {
 .footerContainer {
   width: 100%;
   padding-bottom: calc(1em + 50px);
-  background-color: white;
 }
+
+
 
 .footerContent {
   max-width: 1000px;

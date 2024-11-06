@@ -2,7 +2,7 @@
 Vue.component("headerComponent", {
     template: `
       <div class="header">
-      <img src="/images/1.webp" alt="Logo" class="logo">
+      <img src="/images/dwell.png" alt="Logo" class="logo">
       <ul class="nav-links">
         <li><a href="#" :class="{ active: $root.currentView === 'home' }" @click.prevent="navigate('home')">Home</a></li>
         <li><a href="#" :class="{ active: $root.currentView === 'applicationProcess' }" @click.prevent="navigate('applicationProcess')">Service</a></li>
@@ -41,10 +41,9 @@ Vue.component("headerComponent", {
             <br>
             <button class="applyButton" onclick="window.location.href='your_link_here'">Pre - Jordan Program</button>
             <button class="applyButton" onclick="window.location.href='your_link_here'">Bethany</button>
-            <img class="churchImage" src="images/church.png" width="60%">
+          
           </div>
-          <div class="flyer"></div>
-        </div>
+        </div><img class="churchImage" src="images/church.png">
   
         <div class="brownBlock">
           <h3>Flash information with Catholic content creator</h3>
@@ -120,18 +119,17 @@ Vue.component("headerComponent", {
     template: `
     <div class="applicationProcessContainer">
       <div class="applicationProcessText">
-          <h1>Application Process</h1>
+          <h1>Our Service</h1>
           <br>
           <p>
-            Interested teams should apply through the Notre Dame ESTEEM Unusual Academy 2024-25 Application Form. Applications must include details about your team, your startup idea, and your vision for its future.
-            <br><br>
-            Once applications are reviewed, selected teams will be invited for interviews. Final decisions will be made by November 8, 2024. The first workshop will commence on November 15, 2024, on the Notre Dame campus.
-            For more information, please contact Germán Estrada, Assistant Teaching Professor & Director @ ESTEEM, at german.estrada@nd.edu.
+          PAPERWORK IN SECONDS.
+          FORMATION IN MINUTES.
+          RELATIONSHIP THAT’S LIFELONG.
           </p>
       </div>
     
-      <button class="applicationProcessButton" onclick="window.location.href='https://frmtb6m2df5.typeform.com/to/d6rSgwRs?typeform-source=esteem-unusualacademy.carrd.co'">
-          Apply Now
+      <button class="applicationProcessButton" onclick="">
+          Free Trail
       </button>
   
 
@@ -147,9 +145,9 @@ Vue.component("headerComponent", {
       return {
         faqList: [
           {
-            question: "What is the Notre Dame ESTEEM Unusual Academy?",
+            question: "What is Dwell's goal?",
             answer:
-              "The Unusual Academy is a hands-on seminar series designed to help student teams build and launch successful technology startups. It includes three workshops over the academic year, covering customer discovery, product development, fundraising, and leadership.",
+              "PAPERWORK IN SECONDS.FORMATION IN MINUTES.RELATIONSHIP THAT’S LIFELONG.",
           },
          
         ],
@@ -190,7 +188,7 @@ Vue.component("headerComponent", {
     template: `
         <footer class="footerContainer">
           <div class="footerContent">
-            <p>&copy; 2024 ESTEEM Unusual Academy. All rights reserved.</p>
+            <p>&copy; 2024 DWell. All rights reserved.</p>
             <nav class="footerNav">
               <a href="#" @click.prevent="navigate('home')">Home</a> |
               <a href="#" @click.prevent="navigate('applicationProcess')">Service</a> |
